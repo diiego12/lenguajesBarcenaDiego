@@ -32,7 +32,7 @@ public class Cuenta {
         return saldo;
     }
 
-    public void setSaldo(float saldo) {
+    public void setSaldo(float saldo) throws CuentaSinFondoExc {
         ValidacionCuenta.validarCuenta(saldo);
         this.saldo = saldo;
     }
