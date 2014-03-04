@@ -7,7 +7,7 @@ package lenguajesdiego;
  */
 public class PruebaCuenta {
     public static void main(String[] args) throws Exception{
-        Cuenta c1 = new Cuenta();
+        Cuenta c1 = new Cuenta(null, 36);
         c1.setNombre("Diego");
         c1.setEdad(22);
         c1.setSaldo(0);
