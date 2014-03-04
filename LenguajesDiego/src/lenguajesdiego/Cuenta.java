@@ -37,6 +37,9 @@ public class Cuenta {
         this.saldo = saldo;
     }
 
+    public String toString(){
+        return "usuario " +nombre+ " creado con saldo " +saldo; 
+    }
 
 
 }
