@@ -8,6 +8,7 @@ package lenguajesdiego;
 public class CuentaSinFondoExc extends Exception {
     public CuentaSinFondoExc (){
         super("Sin Fondos Suficientes");
+        
     }
     
 }
