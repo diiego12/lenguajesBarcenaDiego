@@ -10,6 +10,16 @@ public class Cuenta {
     private String nombre;
     private int edad;
 
+    public Cuenta(float saldo, String nombre) {
+        this.saldo = saldo;
+        this.nombre = nombre;
+    }
+    
+
+    public Cuenta(String nombre, float saldo){
+        this.nombre=nombre;
+        this.saldo=saldo;
+    }
     
 
     public String getNombre() {
