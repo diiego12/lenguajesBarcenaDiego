@@ -1,6 +1,7 @@
 
 package org.diego.Capitulo5;
 
+import java.util.*;
 
 public class Reloj {
 
@@ -8,18 +9,23 @@ public class Reloj {
         
         Thread t1 = new Thread(new Runnable(){
             public void run(){
-                System.out.println("este es el primer thread");
-            }
-        });
-        
-        Thread t2 = new Thread(new Runnable(){
-            public void run(){
-                System.out.println("estoy seguro que este es el thread 2");
-            }
+                while(true){
+                try {
+                    Thread.sleep(1000);
+                    //Crear un objeto que se llama Calendar
+                Calendar cal = Calendar.getInstance();
+                int hora=cal.get(Calendar.HOUR);
+                int minuto=cal.get(Calendar.MINUTE);
+                int segundo=cal.get(Calendar.SECOND);
+                String time=hora+":"+minuto+":"+segundo;
+                    System.out.println(time);
+                } catch (InterruptedException ex) {
+                   
+                }
+            }}
         });
         
         t1.start();
-        t2.start();
     }
     
     
