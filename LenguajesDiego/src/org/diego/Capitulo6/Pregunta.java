@@ -5,10 +5,12 @@ import java.util.*;
 public class Pregunta {
 private String titulo;
 private ArrayList<Opcion>opciones;
+private int id;
 
-    public Pregunta(String titulo, ArrayList<Opcion> opciones) {
+    public Pregunta(String titulo, ArrayList<Opcion> opciones, int id) {
         this.titulo = titulo;
         this.opciones = opciones;
+        this.id=id;
     }
 
     public String getTitulo() {
@@ -25,6 +27,14 @@ private ArrayList<Opcion>opciones;
 
     public void setOpciones(ArrayList<Opcion> opciones) {
         this.opciones = opciones;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }
