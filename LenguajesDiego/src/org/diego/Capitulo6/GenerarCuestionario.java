@@ -20,7 +20,7 @@ public class GenerarCuestionario {
         opciones1.add(op13);
         opciones1.add(op14);
          
-        Pregunta p1 = new Pregunta (1,"¿Cual es el país con mejor sistema de edicación?",opciones1);
+        Pregunta p1 = new Pregunta (1,"¿Cual es el país con mejor sistema de educación?",opciones1);
              
          cuestionario.add(p1);      
                         
