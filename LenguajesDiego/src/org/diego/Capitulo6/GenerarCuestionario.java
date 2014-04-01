@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GenerarCuestionario {
     
-    public ArrayList<Pregunta> obtenerCuestionario(){
+    public static ArrayList<Pregunta> obtenerCuestionario(){
     
        ArrayList<Pregunta> cuestionario=new ArrayList<Pregunta>();
        ArrayList <Opcion> opciones1 = new ArrayList<Opcion>(); 
@@ -21,8 +21,7 @@ public class GenerarCuestionario {
         opciones1.add(op14);
          
         Pregunta p1 = new Pregunta (1,"¿Cual es el país con mejor sistema de edicación?",opciones1);
-        
-        
+             
          cuestionario.add(p1);      
                         
     return cuestionario;
