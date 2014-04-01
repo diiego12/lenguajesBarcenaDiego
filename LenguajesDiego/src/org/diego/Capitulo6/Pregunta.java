@@ -7,7 +7,7 @@ private String titulo;
 private ArrayList<Opcion>opciones;
 private int id;
 
-    public Pregunta(String titulo, ArrayList<Opcion> opciones, int id) {
+    public Pregunta(int id,String titulo, ArrayList<Opcion> opciones) {
         this.titulo = titulo;
         this.opciones = opciones;
         this.id=id;
