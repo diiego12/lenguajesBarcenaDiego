@@ -1,4 +1,4 @@
-package org.diego.Capitulo7;
+package org.diego.capitulo7;
 
 public class TestUsuario {
     public static void main(String[] args) throws Exception {

@@ -1,15 +1,14 @@
-
 package org.diego.capitulo7;
 
 
-import java.io.File;
+//import java.io.File;
 
 
 import java.io.*;
 public class GuardarUsuario {
     
     public synchronized static Usuario leer()throws Exception{
-   File file=new File("algo.txt");    
+   File file=new File("archivaldo.xxx");    
    
     FileInputStream fis=new FileInputStream(file);
     ObjectInputStream  ois=new ObjectInputStream(fis);
@@ -19,7 +18,7 @@ public class GuardarUsuario {
   }
     
     public static void guardar(Usuario u)throws Exception{
-       File file=new File("algo.txt");    
+       File file=new File("archivaldo.xxx");    
    
     FileOutputStream fis=new FileOutputStream(file);
     ObjectOutputStream  ois=new ObjectOutputStream(fis);
@@ -29,18 +28,3 @@ public class GuardarUsuario {
     }
     
 }
-
- 
- 
-
-
- 
-   
-
-Status
- API
- Training
- Shop
- Blog
- About
- 
